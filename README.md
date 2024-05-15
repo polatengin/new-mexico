@@ -6,15 +6,7 @@ This is a sample application to show how we can use the `@azure/communication-re
 Learn more about the [Azure Communication Services UI Library](https://azure.github.io/communication-ui-library/). 
 The client-side application is a React based user interface. Alongside this front-end is a NodeJS web application powered by ExpressJS that performs functionality like minting new user tokens for each call participant.
 
-Additional documentation for this sample can be found on [Microsoft Docs](https://docs.microsoft.com/azure/communication-services/samples/calling-hero-sample).
-
-Before contributing to this sample, please read our [contribution guidelines](./CONTRIBUTING.md).
-
 ![Homepage](./assets/homepage-sample-calling.png)
-
-## ❤️ Feedback
-
-We appreciate your feedback and energy helping us improve our services. [If you've tried the service, please give us feedback through this survey](https://microsoft.qualtrics.com/jfe/form/SV_9WTOR2ItSo0oFee).  
 
 ## Prerequisites
 
@@ -39,12 +31,12 @@ We appreciate your feedback and energy helping us improve our services. [If you'
 1. Open an instance of PowerShell, Windows Terminal, Command Prompt or equivalent and navigate to the directory that you'd like to clone the sample to.
 
    ```shell
-   git clone https://github.com/Azure-Samples/communication-services-web-calling-hero.git`
+   git clone https://github.com/polatengin/new-mexico.git`
    ```
 
 1. Get the `Connection String` from the Azure portal. For more information on connection strings, see [Create an Azure Communication Resources](https://docs.microsoft.com/azure/communication-services/quickstarts/create-communication-resource)
 
-2. Once you get the `Connection String`, add the connection string to the **samples/Server/appsetting.json** file. Input your connection string in the variable: `ResourceConnectionString`.
+1. Once you get the `Connection String`, add the connection string to the **samples/Server/appsetting.json** file. Input your connection string in the variable: `ResourceConnectionString`.
 
 > There are two other properties in the appsettings.json file (EndpointUrl, AdminUserId). For the Calling Hero Sample these two properties are unnecessary. We use this file with our chat hero sample and that is where those strings are used.
 
