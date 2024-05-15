@@ -1,16 +1,4 @@
----
-page_type: sample
-languages:
-- typescript
-- nodejs
-products:
-- azure
-- azure-communication-services
----
-
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fcommunication-services-web-calling-hero%2Fmain%2Fdeploy%2Fazuredeploy.json)
-
-# Group Calling Sample
+# Azure Communication Services Sample
 
 ## Overview
 
@@ -36,12 +24,13 @@ We appreciate your feedback and energy helping us improve our services. [If you'
 - Create an Azure Communication Services resource. For details, see [Create an Azure Communication Resource](https://docs.microsoft.com/azure/communication-services/quickstarts/create-communication-resource). You'll need to record your resource **connection string** for this quickstart.
 
 ## Code structure
+
 - ./client/src/app: Where the client code lives
-- ./client/src/app/App.tsx:  Entry point into the calling sample 
-- ./client/src/app/views/HomeScreen.tsx:  
-- ./client/src/app/views/CallScreen.tsx:  
-- ./client/src/app/views/EndCall.tsx:  
-- ./client/src/app/views/UnsupportedBrowserPage.tsx:  
+- ./client/src/app/App.tsx: Entry point into the calling sample
+- ./client/src/app/views/HomeScreen.tsx:
+- ./client/src/app/views/CallScreen.tsx:
+- ./client/src/app/views/EndCall.tsx:
+- ./client/src/app/views/UnsupportedBrowserPage.tsx:
 - ./Server: server code
 - ./Server/appsettings.json: Where to put your azure communication services connection string
 
@@ -52,11 +41,12 @@ We appreciate your feedback and energy helping us improve our services. [If you'
    ```shell
    git clone https://github.com/Azure-Samples/communication-services-web-calling-hero.git`
    ```
-   
+
 1. Get the `Connection String` from the Azure portal. For more information on connection strings, see [Create an Azure Communication Resources](https://docs.microsoft.com/azure/communication-services/quickstarts/create-communication-resource)
+
 2. Once you get the `Connection String`, add the connection string to the **samples/Server/appsetting.json** file. Input your connection string in the variable: `ResourceConnectionString`.
 
-* There are two other properties in the appsettings.json file (EndpointUrl, AdminUserId). For the Calling Hero Sample these two properties are unnecessary. We use this file with our chat hero sample and that is where those strings are used.
+> There are two other properties in the appsettings.json file (EndpointUrl, AdminUserId). For the Calling Hero Sample these two properties are unnecessary. We use this file with our chat hero sample and that is where those strings are used.
 
 ## Local run
 
@@ -78,7 +68,7 @@ We appreciate your feedback and energy helping us improve our services. [If you'
 
 1. The app shows an "Unsupported browser" screen but I am on a [supported browser](https://docs.microsoft.com/en-us/azure/communication-services/concepts/voice-video-calling/calling-sdk-features#calling-client-library-browser-support).
 
-	If your app is being served over a hostname other then localhost, you must serve traffic over https and not http.
+If your app is being served over a hostname other then localhost, you must serve traffic over https and not http.
 
 ## Publish to Azure
 
