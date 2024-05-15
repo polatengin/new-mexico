@@ -1,0 +1,20 @@
+{
+  "name": "new-mexico",
+  "version": "1.0.0",
+  "scripts": {
+    "setup": "cd server && npm install && cd ../client && npm install && cd ..",
+    "start": "cd client && npm run start && cd ..",
+    "build": "cd server && npm run build && cd ../client && npm run build && cd ..",
+    "package": "cd client && npm run package && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polatengin/new-mexico.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/polatengin/new-mexico/issues"
+  },
+  "homepage": "https://github.com/polatengin/new-mexico#readme"
+}
